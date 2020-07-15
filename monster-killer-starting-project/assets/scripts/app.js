@@ -213,8 +213,8 @@ function printLogHandler() {
     }
 
     let j = 0;
-    outerWhile: do {              // labeled statements -->  we give a name in front of loop . outerWhile: do    / and this name is used with break and continue
-        console.log('Outer', j);            // break outerWhile;  --> now this allows us to break differnet loop than you currently in, in this case we break from the outerloop while we are in the inner loop
+    outerWhile: do {            
+        console.log('Outer', j);          
       innerFor:  for (let k = 0; k < 5; k++) {
            if ( k === 3) {
                break outerWhile; 
